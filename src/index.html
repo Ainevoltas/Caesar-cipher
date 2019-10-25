@@ -6,8 +6,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+      <article>
+          <header>
+            <h1>Secret Code Generator</h1>
+            <p>Cesar cipher box..</p>
+          </header>
+      </article>
+      <hr>
     <div id="root">
-      <h1>Hello world!</h1>
+      <section>  
+        <h2>Encode Section: </h2>      
+        <div>
+            <label for="decodedMessageInputId">Please enter a message you want to encode..</label>
+            <input id="decodedMessageInputId" type="text">
+        </div>
+        <div>
+          <label for="offsetEncodeInputId">Please select an encoding offset for your message..</label>
+          <input id="offsetEncodeInputId" min="1" max="26" type="number">
+        </div>
+        <div>
+          <button type="button" class="btn">Enconde your Message!</button>
+        </div>
+        <div>
+          <p id="ecodedMessageId">enconded message</p>
+        </div>
+      </section>
+      <hr>
+      <br>
+      <section>  
+          <h2>Decode Section: </h2>      
+          <div>
+              <label for="userMessageInputId">Please enter a message you want to decode..</label>
+              <input id="userMessageInputId" type="text">
+          </div>
+          <div>
+            <label for="offsetDecodeInputId">Please select a decoding offset for your message..</label>
+            <input id="offsetDecodeInputId" min="1" max="26" type="number">
+          </div>
+          <div>
+            <button type="button" class="btn">Decode your Message!</button>
+          </div>
+          <div>
+            <p id="decodedMessageId">decoded message</p>
+          </div>
+        </section>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
