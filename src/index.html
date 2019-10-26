@@ -22,13 +22,13 @@
         </div>
         <div>
           <label for="offsetEncodeInputId">Please select an encoding offset for your message..</label>
-          <input id="offsetEncodeInputId" min="1" max="26" type="number">
+          <input id="offsetEncodeInputId" min="1" type="number">
         </div>
         <div>
-          <button type="button" id="encodeMessageBtnId" onclick="encondeMessage()" class="btn">Enconde your Message!</button>
+          <button type="button" id="encodeMessageBtnId" onclick="encondeMessage()" class="btn">Encode your Message!</button>
         </div>
         <div>
-          <p id="ecodedMessageId">enconded message</p>
+          <p id="ecodedMessageId">your encoded message will appear here!</p>
         </div>
       </section>
       <hr>
@@ -36,18 +36,18 @@
       <section>  
           <h2>Decode Section: </h2>      
           <div>
-              <label for="userMessageInputId">Please enter a message you want to decode..</label>
-              <input id="userMessageInputId" type="text">
+              <label for="encondedMessageInputId">Please enter a message you want to decode..</label>
+              <input id="encondedMessageInputId" type="text">
           </div>
           <div>
             <label for="offsetDecodeInputId">Please select a decoding offset for your message..</label>
-            <input id="offsetDecodeInputId" min="1" max="26" type="number">
+            <input id="offsetDecodeInputId" min="1" type="number">
           </div>
           <div>
-            <button type="button" class="btn">Decode your Message!</button>
+            <button type="button" onclick="decodeMessage()" class="btn">Decode your Message!</button>
           </div>
           <div>
-            <p id="decodedMessageId">decoded message</p>
+            <p id="decodedMessageId">your decoded message will appear here!</p>
           </div>
         </section>
     </div>
